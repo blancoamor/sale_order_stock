@@ -20,16 +20,17 @@
 ##############################################################################
 
 {
-    'name': 'Stock information in sale order line',
+    'name': 'Serial number information on the product',
     'version': '0.1',
     'category': 'Tools',
     'description': "",
-    'author': 'Moldeo Interactive & Grupo Adhoc',
-    'website': 'http://business.moldeo.coop http://grupoadhoc.com.ar/',
+    'author': 'Moldeo Interactive',
+    'website': 'http://business.moldeo.coop/',
     'images': [],
-    'depends': ['sale'],
+    'depends': ['product'],
     'demo': [],
-    'data': ['sale_view.xml'],
+    'data': ['product_view.xml'],
+    # 'data': [],
     'test': [],
     'installable': True,
 }

@@ -22,24 +22,14 @@
 from openerp.osv import fields, osv
 import pdb
 
-class sale_order_line_stock(osv.osv):
-    _name = 'sale.order.line'
-    _inherit = "sale.order.line"
-
-    def _fnct_line_stock(self, cr, uid, ids, field_name, args, context=None):
-        product_obj = self.pool.get('product.product')
-        if context is None:
-            context = {}
-        stock_available = 0
-        res = {}
-        for line in self.browse(cr, uid, ids, context=context):
-            res[line.id] = line.product_id.virtual_available - line.product_uom_qty
-        return res
+class product_product(osv.osv):
+    _name = 'product.product'
+    _inherit = "product.product"
 
     _columns = {
-        'virtual_available': fields.function(_fnct_line_stock, string='Available Stock'),
+        'serial_number_ids': fields.one2many('stock.production.lot','product_id','Serial ID'),
     }
 
-sale_order_line_stock()
+product_product()
 
 # vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:
