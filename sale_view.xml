@@ -12,14 +12,13 @@
 			<field name="virtual_available" />
 		</field> 
         	    <xpath
-                	expr="/form/notebook/page/field[@name='order_line']/tree/field[@name='price_unit']" position="before">
+                	expr="/form/sheet/notebook/page[@string='Order Lines']/field[@name='order_line']/tree[@string='Sales Order Lines']/field[@name='price_unit']" position="before">
         	       	 <field name="virtual_available"/>
 	            </xpath>
-		    <!--
-    		    <xpath
-                	expr="/form/notebook/page/field[@name='order_line']/form/notebook/page/field[@name='price_unit']" position="before">
-	                <field name="virtual_available"/>
-	            </xpath>  -->
+        	    <!-- xpath
+                	expr="/form/notebook/page/field[@name='order_line']/tree/field[@name='price_unit']" position="before">
+        	       	 <field name="virtual_available"/>
+	            </xpath -->
 	        </data> 
 	    </field>
 	</record>

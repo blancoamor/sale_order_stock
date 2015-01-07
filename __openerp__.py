@@ -20,16 +20,17 @@
 ##############################################################################
 
 {
-    'name': 'Serial number information on the product',
+    'name': 'Sale Order Stock information - Serial number information on the product',
     'version': '0.1',
     'category': 'Tools',
     'description': "",
     'author': 'Moldeo Interactive',
     'website': 'http://business.moldeo.coop/',
     'images': [],
-    'depends': ['product'],
+    'depends': ['product','sale'],
     'demo': [],
-    'data': ['product_view.xml'],
+    'data': ['product_view.xml','sale_view.xml'],
+    # 'data': ['product_view.xml'],
     # 'data': [],
     'test': [],
     'installable': True,

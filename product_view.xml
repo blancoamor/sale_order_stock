@@ -12,7 +12,7 @@
                             <field name="serial_number_ids" >
                               <tree string="Serial Numbers">
                                     <field name="name" />
-                                    <field name="stock_available" />
+                                    <!-- field name="stock_available" / -->
                               </tree>
 			    </field>
 			</page>
