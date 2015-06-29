@@ -29,7 +29,7 @@
     'images': [],
     'depends': ['product','sale'],
     'demo': [],
-    'data': ['product_view.xml','sale_view.xml'],
+    'data': ['sale_view.xml'],
     # 'data': ['product_view.xml'],
     # 'data': [],
     'test': [],
