@@ -20,7 +20,7 @@
 ##############################################################################
 
 {
-    'name': 'Sale Order Stock information - Serial number information on the product',
+    'name': 'Sale Order Stock information on the product',
     'version': '0.1',
     'category': 'Tools',
     'description': "",
