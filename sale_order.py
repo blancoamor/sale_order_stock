@@ -42,13 +42,10 @@ class sale_order_line_stock(osv.osv):
 		inventory = 0
 		for quant in quant_obj.browse(cr,uid,quant_ids):
 			inventory += quant.qty
-	        if line.order_id.state == 'draft':
-               		if inventory < 0:
-	       			res[line.id] = 0 - line.product_uom_qty
-	            	else:
-	                	res[line.id] = inventory - line.product_uom_qty
-	        else:
-	       		res[line.id] = 0
+       		if inventory < 0:
+   			res[line.id] = 0 - line.product_uom_qty
+        	else:
+            	res[line.id] = inventory - line.product_uom_qty
         return res
 
     _columns = {
